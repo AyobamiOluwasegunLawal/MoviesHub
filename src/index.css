@@ -6,7 +6,7 @@
     --color-dark: #0F0D23;
     --color-gray-100: #9CA4AB;
 
-    --background-image-hero-pattern: url("/hero-img.png");
+    --background-image-hero-pattern: url("/BG.png");
     --font-dm: "DM Sans", "sans-serif";
 }
 
@@ -31,10 +31,17 @@
         @apply min-h-screen relative bg-black;
     }
 
+    header img{
+        @apply w-full max-w-lg h-auto object-contain mx-auto drop-shadow-md;
+    }
+
 }
 
 @layer components{
     .wrapper{
-        @apply max-w-7xl px-5 sm:px-10 mx-auto flex flex-col
+        @apply max-w-7xl px-5 sm:px-10 mx-auto flex flex-col relative z-10
+    }
+    .pattern {
+        @apply bg-hero-pattern w-screen h-screen bg-center bg-cover absolute z-0;
     }
 }

@@ -6,6 +6,7 @@ const App = () => {
 
       <div className={'wrapper'}>
         <header>
+            <img src='/hero.png' alt={"Hero banner"}/>
           <h1>
             Find <span className={'gradient'}>Movies</span> You’ll Love Without the Hassle
           </h1>
