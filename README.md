@@ -1,8 +1,16 @@
-# React + Vite
+# 🎬 Movies Hub – A Modern Single Page Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Movies Hub is a **Single Page Application (SPA)** that allows users to explore movies from an **external API** with **pagination** and a **search feature**. Users can easily find movies they are interested in while also discovering the **Top Trending Movies**, ranked based on actual user searches within the app—simulating a **Netflix-style trending list**.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- 🔍 **Search & Discover** – Find any movie instantly.
+- 🎞 **Paginated Movie Listings** – Browse seamlessly through large movie collections.
+- 📊 **Trending Movies** – Real-time rankings based on user searches.
+- ⚡ **Fast & Responsive** – Optimized for smooth user experience.
+- 🌐 **API Integration** – Fetches movies dynamically from an external API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Tech Stack
+- **Frontend**: React
+- **BaaS**: Appwrite // for storage
+- **API Handling**: Fetch API
+- **Styling**: Tailwind CSS
