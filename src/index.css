@@ -1,1 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import "tailwindcss";
+
+@theme{
+    --color-black: #030014;
+    --color-dark: #0F0D23;
+    --color-gray-100: #9CA4AB;
+
+    --background-image-hero-pattern: url("/hero-img.png");
+    --font-dm: "DM Sans", "sans-serif";
+}
+
+@utility gradient{
+    @apply bg-gradient-to-r from-[#D6C7FF] to-[#AB8BFF] bg-clip-text text-transparent
+}
+
+@layer base{
+    body{
+        @apply bg-black font-dm
+    }
+    h1{
+        @apply text-5xl font-bold text-center max-w-4xl mx-auto sm:text-[64px] leading-tight tracking-[-1%] sm:leading-[76px] text-white
+
+    }
+
+    header {
+        @apply sm:mt-10 mt-5;
+    }
+
+    main {
+        @apply min-h-screen relative bg-black;
+    }
+
+}
+
+@layer components{
+    .wrapper{
+        @apply max-w-7xl px-5 sm:px-10 mx-auto flex flex-col
+    }
+}
