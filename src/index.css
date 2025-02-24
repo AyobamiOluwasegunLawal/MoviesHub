@@ -5,6 +5,8 @@
     --color-black: #030014;
     --color-dark: #0F0D23;
     --color-gray-100: #9CA4AB;
+    --color-light-100: #cecefb;
+
 
     --background-image-hero-pattern: url("/BG.png");
     --font-dm: "DM Sans", "sans-serif";
@@ -14,27 +16,44 @@
     @apply bg-gradient-to-r from-[#D6C7FF] to-[#AB8BFF] bg-clip-text text-transparent
 }
 
-@layer base{
-    body{
+@layer base {
+    body {
         @apply bg-black font-dm
     }
-    h1{
+
+    h1 {
         @apply text-5xl font-bold text-center max-w-4xl mx-auto sm:text-[64px] leading-tight tracking-[-1%] sm:leading-[76px] text-white
 
     }
 
-    header {
-        @apply sm:mt-10 mt-5;
+        header {
+            @apply sm:mt-10 mt-5;
+        }
+
+        main {
+            @apply min-h-screen relative bg-black;
+        }
+
+        header img {
+            @apply w-full max-w-lg h-auto object-contain mx-auto drop-shadow-md;
+        }
+
     }
 
-    main {
-        @apply min-h-screen relative bg-black;
+.search {
+    @apply w-full bg-light-100/5 px-4 py-3 rounded-lg mt-10 max-w-3xl mx-auto;
+
+    & div {
+        @apply relative flex items-center;
     }
 
-    header img{
-        @apply w-full max-w-lg h-auto object-contain mx-auto drop-shadow-md;
+    & img {
+        @apply absolute left-2 h-5 w-5;
     }
 
+    & input {
+        @apply w-full bg-transparent py-2 sm:pr-10 pl-10 text-base text-gray-200 placeholder:text-light-100 outline-hidden;
+    }
 }
 
 @layer components{
